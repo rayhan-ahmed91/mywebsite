@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #121212; /* Black Background */
+    color: #ffffff; /* White Text */
     text-align: center;
 }
 
@@ -27,6 +27,7 @@ body {
 .hero-container h1 {
     font-size: 3rem;
     font-weight: 700;
+    color: #ffcc00; /* Yellow Highlight */
 }
 
 .hero-container p {
@@ -69,7 +70,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffcc00; /* Yellow Text */
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
@@ -77,19 +78,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdf40;
+    color: #ff4500;
 }
 
 /* Section Styling */
 section {
     padding: 80px 0;
+    background-color: #1a1a1a; /* Dark Gray */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
 }
 
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 5px solid #6e8efb;
+    border: 5px solid #ffcc00;
     margin-bottom: 15px;
     transition: transform 0.3s ease-in-out;
 }
@@ -102,44 +107,64 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #555;
+    color: #ffcc00;
 }
 
 /* Publications and Projects */
 ul li {
-    background: white;
+    background: #222; /* Darker Background */
     padding: 15px;
     margin: 10px auto;
     width: 60%;
     border-radius: 10px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
+    color: #ffffff;
 }
 
 ul li:hover {
     transform: translateY(-5px);
-    background: #f0f0f5;
+    background: #333;
 }
 
 .project {
-    background: white;
+    background: #222;
     padding: 20px;
     margin: 15px auto;
     width: 70%;
     border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
+    color: #ffffff;
 }
 
 .project:hover {
     transform: translateY(-5px);
-    background: #e0e0ff;
+    background: #333;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1rem;
+}
+
+#contact a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #ff4500;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #000;
     color: white;
     padding: 20px 0;
     margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 400;
 }
