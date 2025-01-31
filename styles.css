@@ -9,64 +9,73 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #121212; /* Black Background */
-    color: #ffffff; /* White Text */
+    color: white; /* White Text */
     text-align: center;
 }
 
-/* Hero Section (Landing Page) */
+/* Hero Section */
 #hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('hero-bg.jpg') no-repeat center center/cover, #121212;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 0 20px;
 }
 
 .hero-container h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #ffcc00; /* Yellow Highlight */
+    margin-bottom: 10px;
 }
 
 .hero-container p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #cccccc; /* Light Gray Text */
 }
 
 .hero-container .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #ff6600;
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 15px;
-    transition: 0.3s;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
 }
 
 .hero-container .btn:hover {
     background-color: #ff4500;
 }
 
-/* Sticky Navigation Bar */
+/* Navigation Bar */
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
     position: fixed;
     top: 0;
     width: 100%;
     padding: 15px 0;
     z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -74,20 +83,35 @@ nav ul li a {
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
-    transition: 0.3s;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #ff4500;
+    background-color: #ffcc00;
+    color: black;
 }
 
 /* Section Styling */
 section {
-    padding: 80px 0;
-    background-color: #1a1a1a; /* Dark Gray */
+    padding: 100px 20px;
+    margin-top: 60px;
+    background-color: #1a1a1a; /* Darker Gray for Sections */
     border-radius: 10px;
-    margin: 20px auto;
+    margin-bottom: 20px;
     width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffcc00;
 }
 
 .profile-pic {
@@ -103,14 +127,13 @@ section {
     transform: scale(1.1);
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #ffcc00;
+/* Publications and Projects */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Publications and Projects */
 ul li {
     background: #222; /* Darker Background */
     padding: 15px;
@@ -145,7 +168,8 @@ ul li:hover {
 
 /* Contact Section */
 #contact p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 #contact a {
@@ -167,4 +191,17 @@ footer {
     margin-top: 30px;
     font-size: 1rem;
     font-weight: 400;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-In Animation for Sections */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(30px);
 }
