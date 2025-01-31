@@ -1,4 +1,4 @@
-/* Modern Reset */
+/* Reset and Smooth Scrolling */
 * {
     margin: 0;
     padding: 0;
@@ -13,44 +13,67 @@ body {
     text-align: center;
 }
 
-/* Header Styling */
-header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+/* Hero Section (Landing Page) */
+#hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
-    padding: 20px 0;
-    position: sticky;
+}
+
+.hero-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-container p {
+    font-size: 1.5rem;
+}
+
+.hero-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.hero-container .btn:hover {
+    background-color: #ff4500;
+}
+
+/* Sticky Navigation Bar */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
     top: 0;
     width: 100%;
+    padding: 15px 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    width: 85%;
-    margin: auto;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
 }
 
 nav ul {
     list-style: none;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -83,11 +106,6 @@ h2 {
 }
 
 /* Publications and Projects */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 ul li {
     background: white;
     padding: 15px;
@@ -115,23 +133,7 @@ ul li:hover {
 
 .project:hover {
     transform: translateY(-5px);
-    background: #f4f4ff;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.1rem;
-}
-
-#contact a {
-    color: #6e8efb;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease-in-out;
-}
-
-#contact a:hover {
-    color: #a777e3;
+    background: #e0e0ff;
 }
 
 /* Footer */
@@ -140,18 +142,4 @@ footer {
     color: white;
     padding: 20px 0;
     margin-top: 30px;
-    font-size: 1rem;
-    font-weight: 400;
 }
-
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.8s ease-in-out;
-}
-
-.fade-out {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
