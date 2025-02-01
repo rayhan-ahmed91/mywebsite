@@ -1,63 +1,66 @@
-/* Reset and Smooth Scrolling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212; /* Black Background */
-    color: white; /* White Text */
+    background-color: #121212;
+    color: #e0e0e0; /* Light gray text for better readability */
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h2 {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Cool cyan-blue */
+    margin-bottom: 20px;
 }
 
 /* Hero Section */
 #hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover, #121212;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
-    padding: 0 20px;
 }
 
 .hero-container h1 {
     font-size: 3.5rem;
-    font-weight: 700;
-    color: #ffcc00; /* Yellow Highlight */
+    color: #00bcd4; /* Cool cyan-blue */
     margin-bottom: 10px;
 }
 
 .hero-container p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #cccccc; /* Light Gray Text */
 }
 
 .hero-container .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #ff6600;
+    background-color: #00bcd4;
     color: white;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: 0.3s ease-in-out;
 }
 
 .hero-container .btn:hover {
-    background-color: #ff4500;
+    background-color: #0097a7; /* Slightly darker cyan */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #00bcd4;
+    margin-bottom: 15px;
 }
 
 /* Navigation Bar */
 header {
-    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     width: 100%;
@@ -79,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00; /* Yellow Text */
+    color: #00bcd4;
     font-size: 1.2rem;
     font-weight: 500;
     text-decoration: none;
@@ -89,79 +92,37 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ffcc00;
-    color: black;
+    background-color: #00bcd4;
+    color: #121212;
 }
 
 /* Section Styling */
 section {
-    padding: 100px 20px;
-    margin-top: 60px;
-    background-color: #1a1a1a; /* Darker Gray for Sections */
+    padding: 50px 20px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
     border-radius: 10px;
-    margin-bottom: 20px;
     width: 90%;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #ffcc00;
-}
-
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid #ffcc00;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-pic:hover {
-    transform: scale(1.1);
-}
-
-/* Publications and Projects */
+/* Lists */
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 ul li {
-    background: #222; /* Darker Background */
+    background: #222;
+    margin: 10px 0;
     padding: 15px;
-    margin: 10px auto;
-    width: 60%;
     border-radius: 10px;
+    color: #b0bec5;
     box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease-in-out;
-    color: #ffffff;
 }
 
 ul li:hover {
-    transform: translateY(-5px);
-    background: #333;
-}
-
-.project {
-    background: #222;
-    padding: 20px;
-    margin: 15px auto;
-    width: 70%;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
-    color: #ffffff;
-}
-
-.project:hover {
     transform: translateY(-5px);
     background: #333;
 }
@@ -173,20 +134,20 @@ ul li:hover {
 }
 
 #contact a {
-    color: #ffcc00;
+    color: #00bcd4;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: #ff4500;
+    color: #0097a7;
 }
 
 /* Footer */
 footer {
     background-color: #000;
-    color: white;
+    color: #e0e0e0;
     padding: 20px 0;
     margin-top: 30px;
     font-size: 1rem;
@@ -194,14 +155,25 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Fade-In Animation for Sections */
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.8s ease-in-out;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
 
-.fade-out {
-    opacity: 0;
-    transform: translateY(30px);
+    .hero-container p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        width: 95%;
+    }
 }
