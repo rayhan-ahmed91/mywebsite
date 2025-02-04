@@ -1,275 +1,149 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #e0e0e0; /* Light gray text for better readability */
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Rayhan Ahmed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Md Rayhan Ahmed</h1>
+            <p>Researcher | Deep Learning | Medical Image Analysis</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
 
-/* Headings */
-h2 {
-    font-size: 2.5rem;
-    color: #00bcd4; /* Cool cyan-blue */
-    margin-bottom: 20px;
-}
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-/* Hero Section */
-#hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <img src="Digital Photo Rayhan.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>About Me</h2>
+            <p>I am Md Rayhan Ahmed, a passionate researcher focusing on deep learning, medical image analysis, and optimization techniques. My primary research interests lie in biomedical image analysis, interpretable machine learning, and healthcare data modeling.</p>
+        </div>
+    </section>
 
-.hero-container h1 {
-    font-size: 3.5rem;
-    color: #00bcd4; /* Cool cyan-blue */
-    margin-bottom: 10px;
-}
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Ph.D. in Computer Science</strong>, University of British Columbia, BC, Canada (2023 - Present)</li>
+                <li><strong>M.Sc. in Computer Science and Engineering</strong>, United International University (2018 - 2020) - Dhaka, Bangladesh</li>
+                <li><strong>B.Sc. in Computer Science and Engineering</strong>, Ahsanullah University of Science and Technology (2010 - 2014) - Dhaka, Bangladesh</li>
+            </ul>
+        </div>
+    </section>
 
-.hero-container p {
-    font-size: 1.5rem;
-}
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
 
-.hero-container .btn {
-    background-color: #00bcd4;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-}
+            <h3>International Journals</h3>
+            <ul>
+                <li>Md Rayhan Ahmed, Patricia Lasserre, “FusionSegNet: A Hierarchical Multi-Axis Attention and Gated Feature Fusion Network for Breast Lesion Segmentation with Uncertainty Modeling in Ultrasound Imaging” – Information Fusion, Elsevier, Q1, Impact Factor: 14.2, Under Review.</li>
+                <li>Md Rayhan Ahmed, Patricia Lasserre, “A Context-Aware Multi-Stream Attentive Convolutional Neural Network for Surface Defect Segmentation” – Information Sciences, Elsevier, Q1, Impact Factor: 8.1, Under Review.</li>
+                <li>Md Rayhan Ahmed, Mohamed Shehata, Patricia Lasserre, “Integrating Lightweight Convolutional Neural Network with Entropy-Informed Channel Attention and Adaptive Spatial Attention for OCT-Based Retinal Disease Classification” – Computers in Biology and Medicine, Elsevier, Q1, Impact Factor: 7.0, Under Revision.</li>
+                <li>Al Mohimanul Islam, Sadia Shakiba Bhuiyan, Mysun Mashira, Md. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, “Polyp Segmentation in Colonoscopy Images Using DeepLabV3++” – Computers in Biology and Medicine, Elsevier, Q1, Impact Factor: 7.0, Under Review.</li>
+                <li>Nishat Tasnim Niloy, Md. Rayhan Ahmed, Sinthia Sarkar Ananna, Sanjida Kater “CottonFabricImageBD: An Image Dataset Characterized by the Percentage of Cotton in a Fabric for Computer Vision-Based Garment Recycling” – Data in Brief, Elsevier, Q3, Impact Factor: 1.0, 2024.</li>
+                <li> M Jishanul Islam, Sahid Hossain Mustakim, Musfirat Hossain, Mysun Mashira, Nur Islam Shourav, Md. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, A.K.M. Muzahidul Islam, “An Audio-Video-Based Multi-Modal Fusion Approach for Emotion Recognition” – Knowledge Based Systems, Elsevier, Q1, Impact Factor: 7.2, Under Revision.</li>
+                <li>Al Mohimanul Islam, Fatiha Binta Masud, Md. Rayhan Ahmed, Anam Ibn Jafar, Jeath Rahmat Ullah, Salekul Islam, Swakkhar Shatabda, A.K.M. Muzahidul Islam, “An Attention Guided Deep Learning Based Network with Bayesian Optimization for Wild-fire Classification and Localization” – Forests, MDPI, Q1, Impact Factor: 3.0.</li>
+                <li>Niful Islam, Md. Rayhan Ahmed, Nur Mohammad Fahad, A.K.M. Muzahidul Islam, Salekul Islam, Saddam Hossain Mukta, Swakkhar Shatabda, “Remote Sensing Image Classification Using Deep Ensemble Learning” – IEEE Open Journal of the Computer Society, Q1, Impact Factor: 5.7, Under Revision.</li>
+                <li>Saiful Islam†, Md. Rayhan Ahmed†, Siful Islam, Md. Mahfuzul Alam Rishad, Sayem Ahmed, Toyabur Rahman Utshow, Minhajul Islam Siam, “BDMediLeaves: A Leaf Images Dataset for Bangladeshi Medicinal Plants Identification” – Data in Brief, Vol. 50, 109488, Q2, Impact Factor: 1.2, Elsevier 2023. [† Co-First Author]</li>
+                <li>Md. Rayhan Ahmed, Adnan Ferdous Ashrafi, Raihan Uddin Ahmed, Swakkhar Shatabda, A.K.M. Muzahidul Islam, Salekul Islam, “DoubleU-NetPlus: A Novel Attention and Context Guided Dual U-Net with Multi-Scale Residual Feature Fusion Network for Semantic Segmentation of Medical Images” – Neural Computing and Applications, Springer Nature, Q1, Impact Factor: 5.5, 2023.</li>
+		<li>Md. Rayhan Ahmed, Md. Asif Iqbal Fahim, A.K.M. Muzahidul Islam, Salekul Islam, Swakkhar Shatabda, “DOLG-Next: Deep Orthogonal Fusion of Local and Global Features with ConvNext for Biomedical Image Segmentation” – Neurocomputing, Elsevier, Q1, Vol. 546, 126362, Impact Factor: 6.0, 2023.</li>
+		<li>Md. Rayhan Ahmed, Salekul Islam, A.K.M. Islam, Swakkhar Shatabda, “An Ensemble 1D-CNN-LSTM-GRU Model with Data Augmentation for Speech Emotion Recognition” – Expert Systems with Applications, 119633, Q1, Impact Factor: 8.665, Elsevier 2023.</li>
+		<li>Md. Rayhan Ahmed, A.K.M. Muzahidul Islam, Swakkhar Shatabda, Salekul Islam, “Blockchain-Based Identity Management System and Self-Sovereign Identity Ecosystem: A Comprehensive Survey” – IEEE Access, Q1, Vol. 10, Impact Factor: 3.336, IEEE, pp. 113436-113481, 2022.</li>
+		<li>Rakesh Kumar Das, Nahidul Islam, Md. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, A.K.M. Muzahidul Islam, “BanglaSER: A Speech Emotion Recognition Dataset for the Bangla Language” – Data in Brief, Q2, Elsevier, 2022, 108091.</li>
+		<li>Md. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, A.K.M. Muzahidul Islam, Md. Towhidul Islam Robin, “Intrusion Detection System in Software-Defined Networks Using Machine Learning and Deep Learning Techniques – A Comprehensive Survey" - TechRxiv</li>
+		<li>Md. Rayhan Ahmed, “Leveraging Convolutional Neural Network and Transfer Learning for Cotton Plant and Leaf Disease Recognition” – International Journal of Image, Graphics and Signal Processing, Vol. 13, No. 4, pp. 47-62, 2021. (Scopus indexed).</li>
+		<li>Md. Rayhan Ahmed, “Leveraging Convolutional Neural Network and Transfer Learning for Cotton Plant and Leaf Disease Recognition” – International Journal of Image, Graphics and Signal Processing, Vol. 13, No. 4, pp. 47-62, 2021. (Q3, Scopus indexed).</li>
+		<li>Md. Rayhan Ahmed, Md. Towhidul Islam Robin, Ashfaq Ali Shafin, “Automatic Environmental Sound Recognition (AESR) Using Convolutional Neural Network” – International Journal of Modern Education and Computer Science, Vol. 12, pp. 41-54, 2020. (Q2, Scopus indexed).</li>
+		<li>Md. Rayhan Ahmed, Ashfaq Ali Shafin, “Statistical and Machine Learning Analysis of Impact of Population and Gender Effect in GDP of Bangladesh: A Case Study” – International Journal of Information Technology and Computer Science (IJITCS), Vol. 12, No. 1, pp. 24-33, 2020.</li>
+		<li>Md. Mohsin, Md. Rayhan Ahmed, Tanveer Ahmed, “Closed Frequent Pattern Mining Using Vertical Data Format: Depth First Approach” – IJSRSET, Vol. 2, Issue 3, pp. 230-238, 2016.</li>
+            </ul>
 
-.hero-container .btn:hover {
-    background-color: #0097a7; /* Slightly darker cyan */
-}
+            <h3>International Conferences</h3>
+            <ul>
+                <li>Niful Islam, Humaira Noor, Md. Rayhan Ahmed, “Enhancing Garbage Classification with Swin Transformer and Attention-Based Autoencoder: An Efficient Approach for Waste Management” – 17th ICITA 2023 – Accepted for presentation, Lecture Notes in Network Systems Series, Springer.</li>
+                <li>adman Sakib, Arefin Ittesafun Abian, Most. Marufatul Jannat Mim, Ripon Kumar Debnath, Azizul Hakim Zen, Md. Rayhan Ahmed, “BCNet-11: A Dilated Convolutional Neural Network for Breast Cancer Classification Using Histopathology Images” – BIM 2023, Taylor and Francis Book Series</li>
+                <li>Al Mohimanul Islam, Fatiha Binta Masud, Md. Rayhan Ahmed, Salekul Islam, “MSFFAR-Net: A Multi-Scale Feature Fusion and Attention-Guided Residual Network for Bangladeshi Medicinal Plants Classification” – 26th ICCIT 2023, Under Review, Scopus Indexed.</li>
+                <li>Md. Enamul Haque, Md. Rayhan Ahmed, Razia Sultana Nila, Salekul Islam, “Human Monkeypox Disease Detection Using Deep Learning Models and Attention Mechanisms” – 25th ICCIT 2022, Scopus Indexed. [Best Presenter Award]</li>
+                <li>Md. Rayhan Ahmed, Adnan Ferdous Ashrafi, Raihan Uddin Ahmed, Tanveer Ahmed, “MCFFA-Net: Multi-Contextual Feature Fusion and Attention Guided Network for Apple Foliar Disease Classification” – 25th ICCIT 2022, Scopus Indexed. [Best Presenter Award]</li>
+		<li>Saleheen Siddique, Umma Hani Mim, Eyamin Bin Aman, Md. Rayhan Ahmed, “3:3:2 – A Sustainable Urban Development Model: Transforming Dhaka into a Sustainable Mega-City” – 5th UIU-ICSD Conference Proceedings, 2022.</li>
+            </ul>
+        </div>
+    </section>
 
-/* Profile Picture */
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid #00bcd4;
-    margin-bottom: 15px;
-}
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Graduate Research Assistant (GRA)</strong>, University of British Columbia (2023 - Present)</li>
+		<li><strong>Graduate Teaching Assistant (GTA)</strong>, University of British Columbia (2023 - Present)</li>
+                <li><strong>Assistant Professor</strong>, United International University, Dhaka, Bangladesh (2021 - 2023, On study leave)</li>
+                <li><strong>Senior Lecturer</strong>, Stamford University Bangladesh, Dhaka, Bangladesh (2015 - 2021)</li>
+                <li><strong>Adjunct Faculty</strong>, East West University (2023), Independent University Bangladesh (2023), Ahsanullah University of Science and Technology, Dhaka, Bangladesh(2016 - 2020)</li>
+            </ul>
+        </div>
+    </section>
 
-/* Navigation Bar */
-header {
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 15px 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
+    <!-- Online Course-Based Certifications -->
+    <section id="certifications">
+        <div class="container">
+            <h2>Online Course-Based Certifications</h2>
+            <ul>
+                <li>“Introduction to TensorFlow for Artificial Intelligence, Machine, and Deep Learning” – Coursera</li>
+                <li>“Convolutional Neural Networks in TensorFlow” – Coursera</li>
+                <li>“Natural Language Processing in TensorFlow” – Coursera</li>
+                <li>“Sequences, Time Series and Prediction” – Coursera</li>
+                <li>“Neural Networks and Deep Learning” – Coursera</li>
+                <li>“Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization” – Coursera</li>
+                <li>“Structuring Machine Learning Projects” – Coursera</li>
+                <li>“Convolutional Neural Networks” – Coursera</li>
+                <li>“Sequence Models” – Coursera</li>
+                <li>“Introduction to Data Science” – Coursera</li>
+                <li>“Applied Plotting, Charting, and Data Representation in Python” – Coursera</li>
+                <li>“Applied Machine Learning in Python” – Coursera</li>
+                <li>“NDG Linux Essentials” – Cisco Networking Academy</li>
+                <li>“Introduction to Cybersecurity” – Cisco Networking Academy</li>
+            </ul>
+        </div>
+    </section>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:md.ahmed@ubc.ca">md.ahmed@ubc.ca</a></p>
+            <p>Google Scholar: <a href="https://scholar.google.ca/citations?user=2Mh1CWwAAAAJ">Scholar Profile</a></p>
+        </div>
+    </section>
 
-nav ul li {
-    margin: 0 20px;
-}
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Md Rayhan Ahmed. All rights reserved.</p>
+    </footer>
 
-nav ul li a {
-    color: #00bcd4;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    background-color: #00bcd4;
-    color: #121212;
-}
-
-/* Section Styling */
-section {
-    padding: 50px 20px;
-    margin: 20px auto;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1200px;
-}
-
-/* Lists */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #222;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    color: #b0bec5;
-    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-ul li:hover {
-    transform: translateY(-5px);
-    background: #333;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-#contact a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease-in-out;
-}
-
-#contact a:hover {
-    color: #0097a7;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
-    color: #e0e0e0;
-    padding: 20px 0;
-    margin-top: 30px;
-    font-size: 1rem;
-    font-weight: 400;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-container h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-container p {
-        font-size: 1.2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        width: 95%;
-    }
-}
-
-/* Certifications Section */
-#certifications {
-    padding: 50px 20px;
-    margin: 20px auto;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1200px;
-}
-
-#certifications ul {
-    list-style: none;
-    padding: 0;
-}
-
-#certifications ul li {
-    background: #222;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    color: #b0bec5;
-    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-#certifications ul li:hover {
-    transform: translateY(-5px);
-    background: #333;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animated-section {
-    animation: fadeInUp 0.6s ease-in-out;
-}
-
-.flat-card {
-    background-color: #222;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.btn-gradient {
-    background: linear-gradient(135deg, #00bcd4, #0097a7);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-}
-
-.btn-gradient:hover {
-    background: linear-gradient(135deg, #0097a7, #00bcd4);
-    transform: scale(1.05);
-}
-
-.neumorphic {
-    background: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #2a2a2a;
-    padding: 20px;
-    text-align: center;
-}
-
-.neumorphic:active {
-    box-shadow: inset 6px 6px 12px #0f0f0f, inset -6px -6px 12px #2a2a2a;
-}
-
-.glass-card {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.glass-card:hover {
-    transform: scale(1.05);
-}
-
-
-
-
+    <script src="script.js"></script>
+</body>
+</html>
