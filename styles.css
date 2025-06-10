@@ -306,3 +306,22 @@ footer {
         position: static;
     }
 }
+
+/* Collapsible arrow indicator */
+.collapsible::after {
+    content: " ▼";
+    float: right;
+    transition: transform 0.3s;
+}
+
+/* Rotate arrow when active */
+.collapsible.active::after {
+    transform: rotate(180deg);
+}
+
+/* Expanded state for collapsible content */
+.collapsible.active + .content-collapsible {
+    display: block;
+    max-height: 5000px; /* large enough to show all content */
+}
+
