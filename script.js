@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
             const section = document.querySelector(this.getAttribute("href"));
             section.scrollIntoView({ behavior: "smooth" });
-
-            // Close mobile menu after click
-            document.querySelector("nav").classList.remove("active");
         });
     });
 
@@ -21,14 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         nav.classList.toggle("active");
-    });
-
-    // Accordion for collapsible publication sections
-    document.querySelectorAll(".collapsible").forEach(button => {
-        button.addEventListener("click", function () {
-            this.classList.toggle("active");
-            const content = this.nextElementSibling;
-            content.style.display = content.style.display === "block" ? "none" : "block";
-        });
     });
 });
