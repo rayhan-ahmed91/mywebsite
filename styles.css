@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #121212;
-    color: #e0e0e0;
+    color: #e0e0e0; /* Light gray text for better readability */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -167,51 +167,109 @@ footer {
 
     nav ul {
         flex-direction: column;
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 10px 0;
     }
 
     nav ul li {
         margin: 10px 0;
-        text-align: center;
     }
 
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    nav.active ul {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        color: #00bcd4;
-        font-size: 2rem;
-        cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 20px;
+    section {
+        width: 95%;
     }
 }
 
-/* Hide Hamburger Menu on Larger Screens */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
+/* Certifications Section */
+#certifications {
+    padding: 50px 20px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        position: static;
+#certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certifications ul li {
+    background: #222;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    color: #b0bec5;
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#certifications ul li:hover {
+    transform: translateY(-5px);
+    background: #333;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
+
+.animated-section {
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.flat-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #00bcd4, #0097a7);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #0097a7, #00bcd4);
+    transform: scale(1.05);
+}
+
+.neumorphic {
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #2a2a2a;
+    padding: 20px;
+    text-align: center;
+}
+
+.neumorphic:active {
+    box-shadow: inset 6px 6px 12px #0f0f0f, inset -6px -6px 12px #2a2a2a;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+
