@@ -1,3 +1,5 @@
+/* Updated script.js */
+
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Website loaded successfully.");
 
@@ -8,5 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const section = document.querySelector(this.getAttribute("href"));
             section.scrollIntoView({ behavior: "smooth" });
         });
+    });
+
+    // Toggle Mobile Navigation Menu
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
     });
 });
